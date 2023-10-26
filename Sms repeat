@@ -1,1 +1,14 @@
+# Function to repeat text a specified number of times
+def repeat_text(text, repeat_count):
+    for _ in range(repeat_count):
+        print(text)
+
+# Input the text
+text = input("YOUR TEXT ")
+
+# Input the number of times to repeat the text
+repeat_count = int(input("REPEAT TIME SIR "))
+
+# Call the function to repeat the text
+repeat_text(text, repeat_count)
 
