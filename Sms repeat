@@ -1,13 +1,164 @@
 # Function to repeat text a specified number of times
+
+import os,sys,time,requests,random,string
+import random
+a="\033[1;30m" # Black
+r="\033[1;31m" # Red
+g="\033[1;32m" # Green
+y="\033[1;33m" # Yellow
+b="\033[1;34m" # Blue
+p="\033[1;35m" # Purple
+c="\033[1;36m" # Cyan
+w="\033[1;37m" # White
+bir="\033[1;31m"
+bi="\033[0;34m"
+bic="\033[0;36m"
+r="\033[1;31m"
+g="\033[1;32m"
+n="\n"
+y="\033[1;33m"
+b="\033[1;34m"
+p="\033[1;35m"
+c="\033[1;36m"
+w="\033[1;37m"
+t="\t"
+c1="\033[1;31m"
+c2="\033[1;32m"
+c3="\033[1;33m"
+c4="\033[1;34m"
+c5="\033[1;36m"
+c6="\033[1;37m"
+XXX = '\33[m' # DEFAULT'
+list=[c1,c2,c3,c4,c5,c6]
+list2=[r,g,c,b,y]
+ran=str(random.choice(list))
+ran2=str(random.choice(list2))
+tim=time.strftime('      %I:%M ')
+tim2=time.strftime('%I:%M')
+###----------[ ANSII COLOR STYLE ]---------- ###
+Z = "\x1b[0;90m"     # Hitam
+M = "\x1b[38;5;196m" # Merah
+H = "\x1b[38;5;46m"  # Hijau
+K = "\x1b[38;5;226m" # Kuning
+B = "\x1b[38;5;44m"  # Biru
+U = "\x1b[0;95m"     # Ungu
+O = "\x1b[0;96m"     # Biru Muda
+P = "\x1b[38;5;231m" # Putih
+J = "\x1b[38;5;208m" # Jingga
+A = "\x1b[38;5;248m" # Abu-Abu
+N = '\x1b[0m'	# WARNA MATI
+PT = '\x1b[1;97m' # PUTIH TEBAL
+MT = '\x1b[1;91m' # MERAH TEBAL
+HT = '\x1b[1;92m' # HIJAU TEBAL
+KT = '\x1b[1;93m' # KUNING TEBAL
+BT = '\x1b[1;94m' # BIRU TEBAL
+UT = '\x1b[1;95m' # UNGU TEBAL
+OT = '\x1b[1;96m' # BIRU MUDA TEBAL
+
+###----------[ RICH COLOR STYLE ]---------- ###
+Z2 = "[#000000]" # HITAM
+M2 = "[#FF0000]" # MERAH
+H2 = "[#00FF00]" # HIJAU
+K2 = "[#FFFF00]" # KUNING
+B2 = "[#00C8FF]" # BIRU
+U2 = "[#AF00FF]" # UNGU
+N2 = "[#FF00FF]" # PINK
+O2 = "[#00FFFF]" # BIRU MUDA
+P2 = "[#FFFFFF]" # PUTIH
+J2 = "[#FF8F00]" # JINGGA
+A2 = "[#AAAAAA]" # ABU-ABU
+
+#------------[ WARNA-COLOR ]--------------#
+P = '\x1b[1;97m'
+M = '\x1b[1;91m'
+H = '\x1b[1;92m'
+K = '\x1b[1;93m'
+B = '\x1b[1;94m'
+U = '\x1b[1;95m' 
+O = '\x1b[1;96m'
+N = '\x1b[0m'    
+Z = "\033[1;30m"
+sir = '\033[41m\x1b[1;97m'
+x = '\33[m' # DEFAULT
+m = '\x1b[1;91m' #RED +
+k = '\033[93m' # KUNING +
+h = '\x1b[1;92m' # HIJAU +
+hh = '\033[32m' # HIJAU -
+u = '\033[95m' # UNGU
+kk = '\033[33m' # KUNING -
+b = '\33[1;96m' # BIRU -
+p = '\x1b[0;34m' # BIRU +
+asu = random.choice([m,k,h,u,b,U])
+
+def Axak(xak):
+        for x in xak:
+                sys.stdout.write(x)
+                sys.stdout.flush()
+
+
+
+
+os.system('clear')
+logo2 = (f'''\t\x1b[1;94m\033[0;92m\x1b[1;94m
+\033[0;92m\x1b[1;93m  
+
+
+
+
+
+ \033[0;92m          
+\033[0;92m\x1b[1;93m  
+███╗░░██╗░█████╗░████████╗██╗░█████╗░███╗░░██╗
+████╗░██║██╔══██╗╚══██╔══╝██║██╔══██╗████╗░██║
+██╔██╗██║███████║░░░██║░░░██║██║░░██║██╔██╗██║
+██║╚████║██╔══██║░░░██║░░░██║██║░░██║██║╚████║
+██║░╚███║██║░░██║░░░██║░░░██║╚█████╔╝██║░╚███║
+╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚══╝ \033[0;92m         
+\033[0;92m\x1b[1;93m  \033[0;92m         
+\033[0;92m\x1b[1;93m  ꧁༒《°.°》☆ YEASIEN AHMED ☆《°.°》༒꧂ \033[0;92m         
+\033[0;92m\x1b[1;93m   \033[0;92m         
+\033[0;92m\x1b[1;93m    \033[0;92m         
+\x1b[1;94m\033[0;92m\x1b[1;94m
+\x1b[1;94m\033[0;92m\x1b[1;94m
+\033[0;92m\33[0;41m              PRO NATION HACKER TEAM              \033[0;92m
+\x1b[1;94m\033[0;92m\x1b[1;94m''')
+fxline = ('')
+#LETTERS
+
+letters = string.ascii_lowercase
+pwd_length = 12
+pwd = ''
+for i in range(pwd_length):
+  pwd += ''.join(random.choice(letters))
+
+#CLUR
+
+
+tim=time.strftime('      %I:%M ')
+tim2=time.strftime('%I:%M')
+print(logo2)
+print(fxline)
+x="_SMS_"
+
+#
+
+x="_PRO NATION-_"
+
+
+os.system('xdg-open https://www.facebook.com/yeasien.ahmed.1?mibextid=ZbWKwL')
+
 def repeat_text(text, repeat_count):
     for _ in range(repeat_count):
         print(text)
 
 # Input the text
-text = input("YOUR TEXT ")
+
+
+
+text = input(" SIR YOUR TEXT: ")
 
 # Input the number of times to repeat the text
-repeat_count = int(input("REPEAT TIME SIR "))
+repeat_count = int(input("REPEAT TIME: "))
 
 # Call the function to repeat the text
 repeat_text(text, repeat_count)
